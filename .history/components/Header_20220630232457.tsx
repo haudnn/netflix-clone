@@ -1,0 +1,29 @@
+import React from 'react'
+import {BellIcon, SearchIcon } from "@heroicons/react/solid"
+import Link from 'next/link'
+const Header = () => {
+  return (
+    <header>
+      <div className="flex items-center space-x-2 md:space-x-10">
+        <img src="https://rb.gy/ulxxee" alt="logo" width={100} height={100} className="cursor-pointer object-contain" />
+        <ul className="hidden space-x-4 md:flex">
+          <li className="headerLink">Trang chủ</li>
+          <li className="headerLink">Phim T.hình</li>
+          <li className="headerLink">Phim</li>
+          <li className="headerLink">Mới & Phổ biến</li>
+          <li className="headerLink">Danh sách của tôi</li>
+        </ul>
+      </div>
+      <div>
+        <SearchIcon className="hidden h-6 w-6 sm:inline "></SearchIcon>
+        <p className="hidden lg:inline">Trẻ em</p>
+        <BellIcon className="h-6 w-6"></BellIcon>
+       <Link href="/account">
+        <img src="https://rb.gy/g1pwyx" alt="avatar" className=""/>
+       </Link>
+      </div>
+    </header>
+  )
+}
+
+export default Header

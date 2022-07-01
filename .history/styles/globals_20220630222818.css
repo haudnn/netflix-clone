@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* html, css, heading */
+@layer base{ 
+    body { 
+        @apply bg-[#141414] text-white
+    }
+}
+/* custom classNames*/
+@layer components {
+     .headerLink{ 
+        @apply cursor-pointer text-sm font-normal text-[#e5e5e5] transition duration-[.4s] hover:text-[#b3b3b3]
+     }
+}
